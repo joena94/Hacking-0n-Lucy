@@ -1,0 +1,1105 @@
+*{margin: 0; padding: 0; box-sizing:border-box;}
+body, html{
+	height: 100%;
+	margin: 0;
+}
+
+#all{
+	width: 100%;
+	background-image: url("../img/prologue-background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+/*Prologue header*/
+#all header{
+	width: 100%;
+	height: 100px;
+}
+#all header .logo{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+/* Prologue article*/
+#all article{
+	width: 1460px;
+	padding: 5%;
+	margin: 0 auto;
+	height: 750px;
+}
+#all article .left{
+	width: 60%;
+	height: 430px;
+	float: left;
+	color: white;
+	margin-top: 2%;
+	padding-top: 6%;
+	border-right: 1px solid white;
+}
+#all article .left p{
+	font-family: 'nanumB';
+	font-size: 58px;
+	margin-bottom: 20px;
+}
+#all article .left span{
+	font-family: 'nanum';
+	font-size:24px;
+	line-height:30px;
+}
+#all article .right{
+	width: 35%;
+	height: 500px;
+	color: white;
+	background-color: transparent;
+	float: right;
+	padding: 5%;
+}
+#all article .right h1{
+	font-family: 'nanumB';
+	font-size: 36px;
+	margin-bottom: 40px;
+}
+#all article .right form{
+	font-family: 'nanumB';
+	line-height: 35px;
+}
+#all article .right form p{
+	font-size: 18px;
+}
+#all article .right form input:focus{
+	outline: none;
+}
+#all article .right form input:nth-child(2){
+	margin-bottom: 30px;
+	padding-left: 5px;
+}
+#all article .right form input:not(.loginSubmit){
+	width: 100%;
+	height: 30px;
+	padding-left: 6px;
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+}
+#all article .right form .loginSubmit{
+	width: 80%;
+	height: 40px;
+	color: white;
+	font-family: 'nanumB';
+	font-size: 18px;
+	background:linear-gradient(to right, #b5448d, #5a83bc);
+	margin: 40px 0 0 30px;
+	border-radius: 30px;
+	border: none;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#all article .right form .loginSubmit:hover{
+	box-shadow: 0 6px 6px 0 rgba(0,0,0,0.24),0 8px 25px 0 rgba(0,0,0,0.19);
+}
+
+/*Prologue footer*/
+footer{
+	width: 100%;
+	height: 97px;
+}
+footer .footerWrap{
+	width: 90%;
+	margin: 0 auto;
+	border-top:1px solid #efefef;
+	padding: 1%;
+	padding-top: 2%;
+}
+footer .footerWrap .footerArticle{
+	width: 100%;
+}
+footer .footerWrap .footerArticle p{
+	color: white;
+	text-align: right;
+}
+
+
+/* PROLOGUE - RESPOSIVE */
+@media screen and (max-width: 1460px){
+	#all article{
+		width: 1040px;
+		padding: 0%;
+		padding-top: 8%;
+		margin: 0 auto;
+		height: 750px;
+	}
+	#all article .left{
+		width: 63%;
+		height: 430px;
+		float: left;
+		color: white;
+		padding-top: 8%;
+	}
+	#all article .right h1{
+		font-family: 'nanumB';
+		font-size: 28px;
+		margin-bottom: 40px;
+		margin-top: 30px;
+	}
+}
+@media screen and (max-width: 1150px){
+	#all article{
+		width: 870px;
+		padding: 0%;
+		padding-top: 12%;
+		margin: 0 auto;
+		height: 750px;
+	}
+	#all article .left{
+		width: 60%;
+		height: 430px;
+		float: left;
+		color: white;
+		padding-top: 8%;
+	}
+	#all article .left p{
+		font-family: 'nanumB';
+		font-size: 48px;
+		margin-bottom: 20px;
+	}
+	#all article .left span{
+		font-family: 'nanum';
+		font-size:20px;
+		line-height:30px;
+	}
+	#all article .right{
+		width: 40%;
+		height: 500px;
+		background-color: transparent;
+		float: right;
+		padding: 5%;
+	}
+	#all article .right h1{
+		font-family: 'nanumB';
+		font-size: 28px;
+		margin-bottom: 40px;
+		margin-top: 40px;
+	}
+	#all article .right form{
+		font-family: 'nanumB';
+		line-height: 35px;
+	}
+	#all article .right form p{
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	#all article{
+		width: 360px;
+		padding: 0%;
+		padding-top: 5%;
+		margin: 0 auto;
+		height: 750px;
+	}
+	#all article .left{
+		width: 100%;
+		height: 275px;
+		color: white;
+		padding-top: 0%;
+		text-align: center;
+		border: none;
+	}
+	#all article .left p{
+		font-family: 'nanumB';
+		font-size: 42px;
+		margin-bottom: 20px;
+	}
+	#all article .left span{
+		font-family: 'nanum';
+		font-size: 16px;
+		line-height:20px;
+	}
+	#all article .right{
+		width: 100%;
+		height: 400px;
+		background-color: transparent;
+		padding: 7%;
+		margin-top: 20px;
+		border-top: 1px solid white;
+	}
+	#all article .right h1{
+		font-family: 'nanumB';
+		font-size: 28px;
+		margin-bottom: 30px;
+		margin-top: 20px;
+	}
+	#all article .right form{
+		font-family: 'nanumB';
+		line-height: 35px;
+	}
+	#all article .right form p{
+		font-size: 18px;
+	}
+}
+
+/* main */
+header .main-Header{
+	width: 100%;
+	height: 50px;
+	background-color: #181818;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+header .main-Header .main-Header-Wrap{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 5px;
+	overflow: hidden;
+}
+header .main-Header .main-Header-Wrap ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: right;
+}
+header .main-Header .main-Header-Wrap ul li{
+	float: left;
+	margin-right: 20px;
+}
+header .main-Header .main-Header-Wrap ul a{
+	color: white;
+	font-size: 28px;
+	text-decoration: none;
+}
+header .main-Header .main-Header-Wrap ul a p{
+	font-size: 24px;
+	font-family: 'nanumB';
+	margin-top: 7px;
+
+}
+#mySidenav{
+	display: none;
+}
+
+/* RESPONSIVE HAMBURGER MENU */
+@media screen and (max-width: 670px){
+	header .main-Header .main-Header-Wrap ul{
+		display: none;
+	}
+	#mySidenav{
+		display: block;
+	}
+	.sidenav {
+		font-family: sans-serif;
+		text-transform: uppercase;
+		height: 100%;
+		/* 100% Full-height */
+		width: 0;
+		/* 0 width - change this with JavaScript */
+		position: fixed;
+		/* Stay in place */
+		z-index: 10000;
+		/* Stay on top */
+		top: 0;
+		right: 0;
+		background-color: white;
+		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+		/* Black*/
+		overflow-x: hidden;
+		/* Disable horizontal scroll */
+		padding-top: 60px;
+		/* Place content 60px from the top */
+		transition: 0.5s;
+		/* 0.5 second transition effect to slide in the sidenav */
+		list-style: none;
+		}
+		/* The navigation menu links */
+	.sidenav a {
+		margin: 30px 0 0px 0;
+		text-decoration: none;
+		font-size: 32px;
+		font-family: 'nanumB';
+		color: #5e4f4a;
+		display: block;
+		transition: 0.3s;
+		width: 100%;
+		text-align: -webkit-center;
+	}
+	/* When you mouse over the navigation links, change their color */
+	.sidenav a:hover, .offcanvas a:focus {
+	    color: black;
+	}
+	/* Position and style the close button (top right corner) */
+	.sidenav .closebtn {
+		position: absolute;
+		top: -13px;
+		right: 32px;
+		font-size: 38px;
+		margin-left: 50px;
+		width: initial;
+	}
+	/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+	#main {
+		transition: margin-left .5s;
+		padding: 20px;
+	}
+	.sub-nav {
+		color: white;
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: 600;
+		cursor: pointer;
+		transition: .3s;
+		text-decoration: none;
+		margin: 0 12px 0 12px;
+	}
+	.sub-nav:hover{
+		color: #C0212A;
+		/* text-decoration: underline; */
+	  
+	}
+	.hamburger-icon {
+		font-size: 36px;
+		color: white;
+		text-decoration: none;
+		position: fixed;
+		z-index: 1000;
+		right: 29px;
+		top: 0px;
+		cursor: pointer;
+		display: inherit;
+	  }
+}
+/* main_article */
+article{
+	width: 100%;
+	height: 600px;
+}
+
+/* my page */
+#mypage{`
+	width: 100%;
+	min-height: 100%;
+	background-image: url(../img/article-background.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-bottom: 157px;
+}
+#mypage .mypageSize{
+	width: 1400px;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+#mypage .mypageSize .mypageBar{
+	width: 200px;
+	margin: 0 auto;
+	height: 7px;
+	background:linear-gradient(to right, #b5448d, #5a83bc);
+}
+#mypage .mypageSize h1{
+	font-family: 'nanumB';
+	text-align:center;
+	margin-top: 10px;
+	padding-top: 15px;
+	color: white;
+}
+#mypage .myname{
+	margin-top: 50px;
+}
+#mypage .myname .mynameWrap{
+	width: 200px;
+	margin: 0 auto;
+	background:linear-gradient(to right, #b5448d, #5a83bc);
+	border-radius: 100px;
+	margin-bottom: 60px;
+}
+#mypage .myname .mynameWrap h2{
+	color: white;
+	font-family: 'nanumB';
+	text-align:center;
+	padding: 8px 0;
+	font-size: 24px;
+}
+#mypage .mypageSize{
+	width: 70%;
+	height: auto;
+}
+#mypage .mypageSize .mypageWrap{
+	width: 100%;
+	margin: 0 auto 100px auto;
+}
+#mypage .mypageSize .mypageWrap .reName{
+	width: 45%;
+	border: 3px solid white;
+	background: rgba(0, 23, 68, 0.3);
+	float: left;
+	padding: 50px 0 15px 0;
+	text-align: center;
+}
+#mypage .mypageSize .mypageWrap .reName:hover{
+	cursor: pointer;
+}
+#mypage .mypageSize .mypageWrap .reName .reNameWrap{
+	margin-bottom: 30px;
+}
+#mypage .mypageSize .mypageWrap .reName .changeName{
+	width: 100%;
+	height: 100%;
+}
+#mypage .mypageSize .mypageWrap .reName .changeName form{
+	text-align: left;
+	border: none;
+	padding: 30px;
+	width: 90%;
+	margin: 0 auto;
+}
+#mypage .mypageSize .mypageWrap .reName .changeName form p{
+	font-size: 18px;
+}
+#mypage .mypageSize .mypageWrap .reName .changeName form .changeOne{
+	border: 1px solid #B5B5B5;
+	border-radius: 15px;
+	width: 50%;
+	height: 30px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+#mypage .mypageSize .mypageWrap .reName .changeName form .changeOne:focus{
+	outline: none;
+}
+#mypage .mypageSize .mypageWrap .reName .changeName form .changeTwo{
+	width: 70%;
+	height: 30px;
+	border: none;
+	border-radius: 15px;
+	font-family: 'nanumB';
+	color: white;
+	background:linear-gradient(to right, #b5448d, #5a83bc);
+	display: block;
+	margin: 20px auto 0 auto;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#mypage .mypageSize .mypageWrap .reName .changeName form .changeTwo:hover{
+	box-shadow: 0 6px 6px 0 rgba(0,0,0,0.24),0 8px 25px 0 rgba(0,0,0,0.19);
+}
+#mypage .mypageSize .mypageWrap .reName i{
+	font-size: 42px;
+	color: white;
+	margin-bottom: 20px;
+}
+#mypage .mypageSize .mypageWrap .reName p{
+	font-size: 24px;
+	color: white;
+	font-family: 'nanumB'
+}
+#mypage .mypageSize .mypageWrap .reName .changeName{
+	display: none;
+}
+#mypage .mypageSize .mypageWrap .rePass .changePass{
+	display: none;
+}
+#mypage .mypageSize .mypageWrap .rePass{
+	width: 45%;
+	border: 3px solid white;
+	background: rgba(0, 23, 68, 0.3);
+	float: right;
+	padding: 50px 0 15px 0;
+	text-align: center;
+}
+#mypage .mypageSize .mypageWrap .rePass:hover{
+	cursor: pointer;
+}
+#mypage .mypageSize .mypageWrap .rePass .rePassWrap{
+	margin-bottom: 30px;
+}
+#mypage .mypageSize .mypageWrap .rePass .changePass{
+	width: 100%;
+	height: 100%;
+}
+#mypage .mypageSize .mypageWrap .rePass .changePass form{
+	width: 90%;
+	margin:0 auto;
+	text-align: left;
+	border-top: none;
+	padding: 30px;
+}
+#mypage .mypageSize .mypageWrap .rePass .changePass form p{
+	width: 40%;
+	font-size: 18px;
+}
+#mypage .mypageSize .mypageWrap .rePass .changePass form .changeThree{
+	margin-bottom: 10px;
+	border: 1px solid #B5B5B5;
+	border-radius: 15px;
+	width: 50%;
+	height: 30px;
+	padding-left: 10px;
+}
+#mypage .mypageSize .mypageWrap .rePass .changePass form .changeThree:focus{
+	outline: none;
+}
+#mypage .mypageSize .mypageWrap .rePass .changePass form .change4{
+	width: 70%;
+	height: 30px;
+	border: none;
+	border-radius: 15px;
+	font-family: 'nanumB';
+	color: white;
+	background:linear-gradient(to right, #b5448d, #5a83bc);
+	display: block;
+	margin: 20px auto 0 auto;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#mypage .mypageSize .mypageWrap .rePass .changePass form .change4:hover{
+	box-shadow: 0 6px 6px 0 rgba(0,0,0,0.24),0 8px 25px 0 rgba(0,0,0,0.19);
+}
+#mypage .mypageSize .mypageWrap .rePass i{
+	font-size: 42px;
+	color: white;
+	margin-bottom: 20px;
+}
+#mypage .mypageSize .mypageWrap .rePass p{
+	font-size: 24px;
+	color: white;
+	font-family: 'nanumB'
+}
+#mypage .mypageSize .mypageWrap .rePass .changePass form .pass-error{
+	margin-top: 20px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+	background-color: white;
+	border-radius: 30px;
+	padding: 1%;
+	text-align: center;
+	font-family: 'nanumB';
+	color: #E10000;
+	font-size: 17px;
+}
+#mypage .mypageSize .mypageWrap .progress{
+	width: 80%;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+	padding: 30px 0px;
+	text-align: center;
+	position: relative;
+	top: 230px;
+}
+#mypage .mypageSize .lucyProgress{
+	border: 3px solid white;
+	background: rgba(0, 23, 68, 0.3);
+	padding: 50px 20px;
+	text-align: center;
+	clear: both;
+	position: relative;
+	top: 80px;
+}
+#mypage .mypageSize .lucyProgress h1{
+	font-size: 28px;
+	padding: 0;
+	padding-bottom: 20px;
+}
+#mypage .mypageSize .lucyProgress .row .progressDetail{
+	font-family: 'nanumB';
+}
+#mypage .mypageSize .lucyProgress .row .progressDetail p{
+	font-size: 18px;
+	line-height: 20px;
+	height: 20px;
+	margin-bottom: 20px;
+	color: white;
+
+}
+.textbox {
+	height: 700px;
+}
+
+.progress {
+	margin-bottom: 10px;
+}
+
+.progress-bar {
+	width: 0;
+	background:linear-gradient(to right, #b5448d, #5a83bc);
+	font-family: 'nanumB';
+}
+
+/* RESPONSIVE MYPAGE*/
+@media screen and (max-width: 1100px){
+	#mypage .mypageSize .mypageWrap .reName .changeName form{
+		text-align: left;
+		border-top: 1px solid #efefef;
+		padding: 30px 15px;
+		width: 90%;
+		margin: 0 auto; 
+	}
+	#mypage .mypageSize .mypageWrap .reName .changeName form .changeOne{
+		border: 1px solid #B5B5B5;
+		border-radius: 15px;
+		width: 100%;
+		height: 30px;
+		padding-left: 10px;
+		margin-bottom: 10px;
+		margin-top: 5px;
+	}
+	#mypage .mypageSize .mypageWrap .rePass .changePass form{
+		width: 90%;
+		margin: 0 auto;
+		text-align: left;
+		border-top: 1px solid #efefef;
+		padding: 30px 15px 40px 15px;
+	}
+	#mypage .mypageSize .mypageWrap .rePass .changePass form .changeThree{
+		margin-bottom: 10px;
+		margin-top: 5px;
+		border: 1px solid #B5B5B5;
+		border-radius: 15px;
+		width: 100%;
+		height: 30px;
+		padding-left: 10px;
+	}
+}
+@media screen and (max-width: 600px){
+	#mypage .mypageSize .mypageWrap .reName{
+		width: 100%;
+		padding: 50px 20px 40px 20px;
+		text-align: center;
+	}
+	#mypage .mypageSize .mypageWrap .rePass{
+		width: 100%;
+		padding: 70px 20px 50px 20px;
+		text-align: center;
+		margin-top: 80px;
+	}
+}
+
+/* challenge _ new blank */
+#challenge{
+	overflow: hidden;
+	width: 100%;
+	min-height: 100%;
+	padding-top: 30px;
+	background-image: url(../img/article-background.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#challenge .alert-success{
+	width: 60%;
+	background-color: white;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 30px;
+	padding: 1%;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	font-family: 'nanumB';
+}
+#challenge .challenge_Size{
+	width: 1400px;
+	margin: 0 auto;
+}
+#challenge .challenge_Size .cha_Left{
+	width: 30%;
+	float: left;
+}
+#challenge .challenge_Size .cha_right{
+	width: 70%;
+	float: right;
+}
+#challenge .challenge_Size .cha_Left > div{
+	width: 100%;
+	height: 200px;
+	border: 3px solid white;
+	background: rgba(0, 23, 68, 0.3);
+	margin-bottom: 7%;
+	padding: 7% 6% 10% 6%;
+}
+#challenge .challenge_Size .cha_Left div .cha_title{
+	background:linear-gradient(to right, #b5448d, #5a83bc);
+	padding: 8px 10px;
+	width: 160px;
+	margin: 1% auto 7% auto;
+	border-radius: 20px;
+}
+#challenge .challenge_Size .cha_Left div .cha_title h3{
+	color: white;
+	text-align: center;
+	font-family: 'nanumB'
+}
+#challenge .challenge_Size .cha_Left div .cha_certi_wrap{
+	width: 100%;
+	margin-top: 40px;
+}
+#challenge .challenge_Size .cha_Left div .cha_certi_wrap form{
+	width: 100%;
+}
+#challenge .challenge_Size .cha_Left div .cha_certi_wrap form .enter_flag{
+	width: 72%;
+	height: 30px;
+	padding-left: 3%;
+	border-radius: 15px;
+	border: 1px solid white;
+}
+#challenge .challenge_Size .cha_Left div .cha_certi_wrap form .enter_flag:focus{
+	outline: none;
+}
+#challenge .challenge_Size .cha_Left div .cha_certi_wrap form .push_submit{
+	width: 25%;
+	height: 30px;
+	float: right;
+	background: white;
+	color: #333;
+	font-family: 'nanumB';
+	border-radius:15px;
+	border: 1px solid #B5B5B5;
+	cursor: pointer;
+	transition: 0.5s;
+}
+#challenge .challenge_Size .cha_Left div .cha_certi_wrap form .push_submit:hover{
+	border: none;
+	background:linear-gradient(to right, #b5448d, #5a83bc);
+	color: white;
+	font-family: 'nanumB';
+}
+
+#challenge .challenge_Size .cha_Left div .cha_refer_wrap{
+	border: 1px solid white;
+	border-radius: 10px;
+	width: 100%;
+	height: 70px;
+	padding: 3% 4%;
+}
+#challenge .challenge_Size .cha_Left div .cha_refer_wrap p{
+	font-family: 'nanum';
+	color: white;
+}
+#challenge .challenge_Size .cha_Left div .cha_rel_wrap{
+	width: 100%;
+	overflow: hidden;
+}
+#challenge .challenge_Size .cha_Left div .cha_rel_wrap a{
+	float: left;
+	color: white;
+	text-decoration: none;
+	font-family: 'nanum';
+	width: 175px;
+	height: 26px;
+	border: 1px solid white;
+	border-radius: 20px;
+	text-align: center;
+	padding: 5px 2px;
+	font-size: 14px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	background: transparent;
+	transition: 0.3s;
+}
+#challenge .challenge_Size .cha_Left div .cha_rel_wrap a:hover{
+	background:linear-gradient(to right, #b5448d, #5a83bc);
+	border: none;
+	color: white;
+}
+#challenge .challenge_Size .cha_right > div{
+	width: 95%;
+	float: right;
+	height: 670px;
+	border: 3px solid white;
+	background: rgba(0, 23, 68, 0.3);
+	padding: 5%;
+}
+#challenge .challenge_Size .cha_right > div .cha_con_title{
+	width: 300px;
+	background:linear-gradient(to right, #b5448d, #5a83bc);
+	padding: 7px 0;
+	margin: 0 auto;
+	border-radius: 30px;
+}
+#challenge .challenge_Size .cha_right > div .cha_con_title h1{
+	color: white;
+	font-family: 'nanumB';
+	text-align: center;
+}
+#challenge .challenge_Size .cha_right > div .challenge_wrap{
+	width: 100%;
+	margin-top: 40px;
+	border: 1px solid white;
+	border-radius: 25px;
+	padding: 3% 4%;
+	font-family: 'nanumB';
+	color: white;
+}
+
+/* RESPONSIVE -  challenge _ new blank  */
+@media screen and (max-width: 1440px){
+	#challenge .challenge_Size{
+		width: 980px;
+		margin: 0 auto;
+	}
+	#challenge .challenge_Size .cha_Left > div{
+		width: 100%;
+		height: 224px;
+		margin-bottom: 10%;
+		background-size: 100% 120%;
+	}
+	#challenge .challenge_Size .cha_right > div{
+		width: 95%;
+		float: right;
+		height: 730px;
+		border: 3px solid white;
+		background: rgba(0, 23, 68, 0.3);
+		background-size: 105% 130%;
+		background-repeat: no-repeat;
+		padding: 5%;
+	}
+	#challenge .challenge_Size .cha_Left div .cha_rel_wrap a{
+		width: 100%;
+		height: 26px;
+		color: white;
+	}
+}
+@media screen and (max-width: 1000px){
+	#challenge .challenge_Size{
+		width: 580px;
+		margin: 0 auto;
+	}
+	#challenge .challenge_Size .cha_Left > div{
+		width: 100%;
+		height: 212px;
+		margin-bottom: 10%;
+		padding: 4% 7%;
+	}
+	#challenge .challenge_Size .cha_right > div{
+		width: 95%;
+		float: right;
+		height: 670px;
+		border: 3px solid white;
+		background: rgba(0, 23, 68, 0.3);
+		padding: 5%;
+	}
+	#challenge .challenge_Size .cha_Left div .cha_title{
+		background:linear-gradient(to right, #b5448d, #5a83bc);
+		padding: 8px 10px;
+		width: 130px;
+		margin: 3% auto 7% auto;
+		border-radius: 20px;
+	}
+	#challenge .challenge_Size .cha_Left div .cha_title h3{
+		color: white;
+		text-align: center;
+		font-family: 'nanumB';
+		font-size:16px;
+	}
+	#challenge .challenge_Size .cha_Left div .cha_certi_wrap form .enter_flag{
+		width: 100%;
+		height: 30px;
+		padding-left: 8%;
+		border-radius: 15px;
+		border: 1px solid #B5B5B5;
+		margin-bottom: 15px;
+	}
+	#challenge .challenge_Size .cha_Left div .cha_certi_wrap form .push_submit{
+		width: 100%;
+	}
+	#challenge .challenge_Size .cha_Left div .cha_rel_wrap a{
+		width: 50%;
+		height: 70px;
+		float: left;
+		margin: 0;
+		padding: 4% 2%;
+		font-size: 12px
+	}
+	#challenge .challenge_Size .cha_Left div .cha_rel_wrap a:hover{
+		padding: 4% 2%;
+		font-size: 12px;
+	}
+
+}
+@media screen and (max-width: 600px){
+	#challenge{
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		padding-top: 70px;
+		background-image: url(../img/article-background.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	#challenge .challenge_Size .cha_Left{
+		width: 90%;
+		float: none;
+		margin: 0 auto;
+	}
+	#challenge .challenge_Size .cha_right{
+		width: 90%;
+		float: none;
+		margin: 0 auto;
+	}
+	#challenge .challenge_Size{
+		width: 340px;
+		margin: 0 auto;
+	}
+	#challenge .challenge_Size .cha_Left div .cha_rel_wrap a{
+		width: 100%;
+		height: 26px;
+		padding-top: 2%;
+		margin-bottom: 3px;
+	}
+	#challenge .challenge_Size .cha_Left div .cha_rel_wrap a:hover{
+		padding-top: 2%;
+	}
+	#challenge .challenge_Size .cha_right > div{
+		width: 100%;
+		float: right;
+		height: 470px;
+		padding: 10% 5% 5% 5%;
+		margin-bottom: 60px;
+	}
+	#challenge .challenge_Size .cha_right > div .cha_con_title{
+		width: 250px;
+		background:linear-gradient(to right, #b5448d, #5a83bc);
+		padding: 7px 0;
+		margin: 0 auto;
+		border-radius: 30px;
+	}
+	#challenge .challenge_Size .cha_right > div .cha_con_title h1{
+		color: white;
+		font-family: 'nanumB';
+		text-align: center;
+		font-size: 18px;
+	}
+	#challenge .challenge_Size .cha_right > div .challenge_wrap{
+		width: 100%;
+		margin-top: 20px;
+		border: 1px solid #B5B5B5;
+		border-radius: 25px;
+		padding: 3% 4%;
+		font-family: 'nanumB'
+	}
+}
+
+#admin{
+	width: 100%;
+	min-height: 100%;
+	background-image: url(../img/article-background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#admin .adminSize{
+	width: 1400px;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+#admin .adminSize .adminBar{
+	width: 200px;
+	margin: 0 auto;
+	height: 7px;
+	background:linear-gradient(to right, #b5448d, #5a83bc);
+}
+#admin .adminSize h1{
+	font-family: 'nanumB';
+	text-align:center;
+	margin-top: 10px;
+	padding-top: 15px;
+	color: white;
+}
+#admin .myname{
+	margin-top: 50px;
+}
+#admin .myname .mynameWrap{
+	width: 200px;
+	margin: 0 auto;
+	background:linear-gradient(to right, #b5448d, #5a83bc);
+	border-radius: 100px;
+	margin-bottom: 60px;
+}
+#admin .myname .mynameWrap h2{
+	color: white;
+	font-family: 'nanumB';
+	text-align:center;
+	padding: 8px 0;
+	font-size: 24px;
+}
+#admin .adminSize{
+	width: 70%;
+	height: auto;
+}
+#admin .adminSize .adminWrap{
+	width: 100%;
+	margin: 0 auto 100px auto;
+}
+#admin .adminSize .adminWrap .adminGroup{
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+	padding: 30px 40px;
+	text-align: left;
+}
+#admin .adminSize .adminWrap .adminGroup .adminStudent{
+	width: 100%;
+}
+#admin .adminSize .adminWrap .adminGroup .adminStudent table{
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'nanum';
+	text-align: center;
+	padding: 2%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+#admin .adminSize .adminWrap .adminGroup .adminStudent table .student_top{
+	height: 50px;
+	background:linear-gradient(to right, #b5448d, #5a83bc);
+	color: white;
+	font-size: 18px;
+}
+#admin .adminSize .adminWrap .adminGroup .adminStudent table .student_top th:first-child{
+	border-radius: 30px 0 0 30px;
+}
+#admin .adminSize .adminWrap .adminGroup .adminStudent table .student_top th:last-child{
+	border-radius: 0 30px 30px 0;
+}
+#admin .adminSize .adminWrap .adminGroup .adminStudent table .student_info{
+	height: 50px;
+}
+#admin .adminSize .adminWrap .adminGroup .adminStudent table .student_info a{
+	color: #b5448d;
+	text-decoration: none;
+	font-size: 24px;
+}
+/*move page*/
+#movepage{
+	width: 100%;
+}
+#movepage .movepageWrap{
+	width: 980px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+#movepage .movepageWrap form{
+	width: 300px;
+	margin: 0 auto;
+}
+#movepage .movepageWrap form a{
+	color: #333;
+	text-decoration: none;
+	text-align: center;
+}
+#movepage .movepageWrap form a div, #movepage .movepageWrap form input:not(.addfile){
+	width: 100%;
+	padding: 10px 10px;
+	background-color: white;
+	border: 1px solid #b5b5b5;
+	border-radius: 25px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+#movepage .movepageWrap form a div:hover, #movepage .movepageWrap form input:hover{
+	background-color: #efefef;
+	color: #333;
+	cursor: pointer
+}

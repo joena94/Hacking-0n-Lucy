@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hacking on Lucy</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<!-- ADMIN PAGE 부트스트랩 CDN 곡 지워주세요!! -->
+</head>
+<style>
+/*폰트 스타일 정의*/
+@font-face{
+	font-family:'nanum';
+	font-weight:100;
+	src:url('font/NanumSquareL.eot');
+	src:url('font/NanumSquareL.eot?#iefix')format('embedded-opentype'),
+	url('font/NanumSquareL.woff')format('woff'),
+	url('font/NanumSquareL.ttf')format('truetype');
+}
+@font-face{
+	font-family:'nanumB';
+	font-weight:bold;
+	src:url('font/NanumSquareEB.eot');
+	src:url('font/NanumSquareEB.eot?#iefix')format('embedded-opentype'),
+	url('font/NanumSquareEB.woff')format('woff'),
+	url('font/NanumSquareEB.ttf')format('truetype');
+}
+</style>
+<body>
+	<header>
+		<div class="main-Header">
+			<div class="main-Header-Wrap">
+				<ul>
+					<li><a href="#"><i class="fas fas fa-home"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div id="admin">
+		<div class="adminSize">
+			<div class="adminBar"> </div>
+			<h1>ADMIN</h1>
+			<div class="myname">
+				<div class="mynameWrap">
+					<h2>그룹원 관리</h2>
+				</div>
+			</div>
+
+			<div class="adminWrap">
+				<div class="adminGroup">
+					<div class="adminStudent" style="overflow-x:auto;">
+						<table>
+							<tr class="student_top">
+								<th>번호</th>
+								<th>이름(ID)</th>
+								<th>닉네임</th>
+								<th>정보확인</th>
+							</tr>
+							<tr class="student_info">
+								<td>001.</td>
+								<td>김민지</td>
+								<td>CCOMA</td>
+								<td><a href="#" target="_blank"><i class="fas fa-user-check"></i></a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+

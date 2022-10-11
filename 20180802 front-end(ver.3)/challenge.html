@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hacking on Lucy</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<style>
+/*폰트 스타일 정의*/
+@font-face{
+	font-family:'nanum';
+	font-weight:100;
+	src:url('font/NanumSquareL.eot');
+	src:url('font/NanumSquareL.eot?#iefix')format('embedded-opentype'),
+	url('font/NanumSquareL.woff')format('woff'),
+	url('font/NanumSquareL.ttf')format('truetype');
+}
+@font-face{
+	font-family:'nanumB';
+	font-weight:bold;
+	src:url('font/NanumSquareEB.eot');
+	src:url('font/NanumSquareEB.eot?#iefix')format('embedded-opentype'),
+	url('font/NanumSquareEB.woff')format('woff'),
+	url('font/NanumSquareEB.ttf')format('truetype');
+}
+</style>
+<body>
+	<header>
+		<div class="main-Header">
+			<div class="main-Header-Wrap">
+				<ul>
+					<li><a href="#"><i class="fas fa-user-cog"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<!-- challenge 시작! -->
+	<section id="challenge">
+		<div class="alert alert-success">
+			<div classs="alertWrap">
+				{{ session('status') }}
+			</div>
+		</div>
+		<div class="challenge_Size">
+			<div class="cha_Left">
+				<div class="certification">
+					<div class="cha_title">
+						<h3>문제 인증</h3>
+					</div>
+					<div class="cha_certi_wrap">
+						<form action="#">
+							<input type="text" value="flag" onfocus="this.value=''" class="enter_flag">
+							<input type="submit" value="Submit" class="push_submit">
+						</form>
+					</div>
+				</div>
+				<div class="reference">
+					<div class="cha_title">
+						<h3>Reference</h3>
+					</div>
+					<div class="cha_refer_wrap">
+						<p>Reference를 입력해주세오!</p>
+					</div>
+				</div>
+				<div class="relation">
+					<div class="cha_title">
+						<h3>연관된 다른 단계</h3>
+					</div>
+					<div class="cha_rel_wrap">
+						<a href="#"><div>쇼핑몰 대금 조작하기1</div></a>
+						<a href="#"><div>친구들의 채팅 내용 도청하기</div></a>
+						<a href="#"><div>서버에 존재하는 파일 삭제</div></a>
+						<a href="#"><div>서버에 존재하는 파일 삭제</div></a>
+					</div>
+				</div>
+			</div>
+			<div class="cha_right">
+				<div class="challenge_content">
+					<div class="cha_con_title">
+						<h1>CHALLENG QUESTION</h1>
+					</div>
+					<div class="challenge_wrap">
+						<div class="real_cha">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

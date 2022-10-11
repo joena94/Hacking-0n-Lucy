@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hacking on Lucy</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<style>
+/*폰트 스타일 정의*/
+@font-face{
+	font-family:'nanum';
+	font-weight:100;
+	src:url('font/NanumSquareL.eot');
+	src:url('font/NanumSquareL.eot?#iefix')format('embedded-opentype'),
+	url('font/NanumSquareL.woff')format('woff'),
+	url('font/NanumSquareL.ttf')format('truetype');
+}
+@font-face{
+	font-family:'nanumB';
+	font-weight:bold;
+	src:url('font/NanumSquareEB.eot');
+	src:url('font/NanumSquareEB.eot?#iefix')format('embedded-opentype'),
+	url('font/NanumSquareEB.woff')format('woff'),
+	url('font/NanumSquareEB.ttf')format('truetype');
+}
+</style>
+<body>
+	<header>
+		<div class="main-Header">
+			<div class="main-Header-Wrap">
+				<ul>
+					<li><a href="#"><i class="fas fas fa-home"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div id="mypage">
+		<div class="mypageSize">
+			<div class="mypageBar"> </div>
+			<h1>MY PAGE</h1>
+
+			<div class="myname">
+				<div class="mynameWrap">
+					<h2>CCOMA</h2>
+				</div>
+			</div>
+
+			<div class="mypageWrap">
+				<div class="reName">
+					<div class="reNameWrap">
+						<i class="fas fa-edit"></i>
+						<p>닉네임 변경</p>
+					</div>
+					<div class="changeName">
+						<form action="#" method="#">
+							<p>현재 닉네임 : <span>CCOMA</span></p>
+							<p style="display: inline;">변경 닉네임 : </p>
+							<input class="changeOne" type="text" name="chageName" value="">
+							<br>
+							<input class="changeTwo" type="submit" name="SUBMIT" value="SUBMIT">
+						</form>
+					</div>
+				</div>
+
+				<div class="rePass">
+					<div class="rePassWrap">
+						<i class="fas fa-key"></i>
+						<p>패스워드 변경</p>
+					</div>
+					<div class="changePass">
+						<form action="#" method="#">
+							<p style="display: inline;">현재 비밀번호 : </p>
+							<input class="changeThree" type="Password" name="nowPass" value=""> <br>
+							<p style="display: inline;">변경 비밀번호 : </p>
+							<input class="changeThree" type="Password" name="chageName" value=""> <br>
+							<p style="display: inline;">비밀번호 확인 : </p>
+							<input class="changeThree" type="Password" name="chageNameConfirm" value="">
+							<br>
+							<input class="change4" type="submit" name="SUBMIT" value="SUBMIT">
+							<div class="pass-error">
+								배불러
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="lucyProgress">
+				<h1>진도율</h1>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-sm-2">
+							<div class="progressDetail">
+								<p>코스1</p>
+								<p>코스2</p>
+								<p>코스3</p>
+								<p>코스4</p>
+							</div>
+						</div>
+						<div class="col-sm-10">
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">90</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$('.barra-nivel').each(function() {
+  var valorLargura = $(this).data('nivel');
+  var valorNivel = $(this).html("<span class='valor-nivel'>"+valorLargura+"</span>");
+    $(this).animate({
+        width: valorLargura
+    });
+});
+</script>
+<script>
+var delay = 500;
+$(".progress-bar").each(function(i){
+    $(this).delay( delay*i ).animate( { width: $(this).attr('aria-valuenow') + '%' }, delay );
+
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: delay,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now)+'%');
+        }
+    });
+});
+$(document).ready(function(){
+    $(".reNameWrap").click(function(){
+        $(".changeName").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $(".rePassWrap").click(function(){
+        $(".changePass").slideToggle("slow");
+    });
+});
+
+</script>
+</body>
+</html>
